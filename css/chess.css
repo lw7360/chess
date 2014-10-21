@@ -1,0 +1,45 @@
+body {
+    background: lightgrey;
+    padding: 20px;
+    font-family: xkcd;
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: white;
+    border: solid 2px;
+}
+
+#square {
+    cursor: move;
+    font-family: stchess;
+}
+.over {
+    /*border: 2px dashed #000;*/
+    /*padding-top: 3px;
+    padding-bottom: 3px;*/
+    background: #66b266;
+}
+
+td {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size:300%;
+}
+
+tr:nth-child(even) td:nth-child(odd), tr:nth-child(odd) td:nth-child(even) {
+    background: silver;
+}
+
+@font-face {
+    font-family: xkcd;
+    src: url("../fonts/xkcd.otf") format("opentype");
+}
+
+@font-face {
+    font-family: stchess;
+    src: url("../fonts/stchess.ttf") format("truetype");
+}
